@@ -8,7 +8,7 @@ All application files will be generated in docker image and mapped to my-app loc
 docker run -it --rm -v "$PWD":app -w app maven:3.5-jdk-8 mvn archetype-generate\
   -DgroupId=io.microsamples.docker\
   -DartifactId=docker-run\
-  -DarchetypeArtifactId=maven-archetype-quickstart
+  -DarchetypeArtifactId=maven-archetype-quickstart \
   -DinteractiveMode=false
 
 cd my-app
